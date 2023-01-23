@@ -400,13 +400,139 @@ body {
   background-color: #FFCC00;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -10px;
 }
 .header::after {
-  content: url(../assets/imgs/icons/bonfire-sharp\ 1.jpg);
+  content: url(../assets/imgs/icons/bonfire-sharp.jpg);
   background-color: white;
   width: 30px;
   position: absolute;
   bottom: -12px;
-  left: 200px;
+  left: 195px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(560px, 1fr));
+  text-align: center;
+  position: relative;
+}
+.main::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #FFCC00;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.photo {
+  padding: 65px 85px 65px 0;
+}
+.photo .photo__container {
+  box-sizing: content-box;
+  width: 400px;
+  padding: 15px 15px;
+  border: 1px solid #FFCC00;
+  position: relative;
+}
+.photo .photo__container::after {
+  content: "";
+  width: 230px;
+  height: 102%;
+  background-color: white;
+  position: absolute;
+  top: -1%;
+  left: 25%;
+  z-index: 0;
+}
+.photo .photo__container::before {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 230px;
+  background-color: white;
+  top: 25%;
+  left: -1%;
+  z-index: 0;
+}
+.photo__img {
+  position: relative;
+  z-index: 1;
+}
+
+.desc {
+  padding: 65px 0 65px 85px;
+}
+.desc__fname {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.6rem;
+  line-height: 1.15;
+  color: #666666;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.desc__fname::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #FFCC00;
+  position: absolute;
+  bottom: 0;
+  left: 65px;
+}
+.desc__title {
+  font-size: 1.7rem;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.desc__socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+.desc__text {
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+}
+.desc__separetor {
+  display: block;
+  margin: 0 auto;
+  height: 4px;
+  width: 20px;
+  background-color: #FFCC00;
+  margin-bottom: 30px;
+  position: relative;
+}
+.desc__separetor::before {
+  content: "";
+  width: 10px;
+  height: 4px;
+  background-color: #FFCC00;
+  position: absolute;
+  left: -15px;
+}
+.desc__separetor::after {
+  content: "";
+  width: 10px;
+  height: 4px;
+  background-color: #FFCC00;
+  position: absolute;
+  right: -15px;
+}
+.desc__profile-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  border: 1px solid #FFCC00;
+  padding: 5px 10px;
 }
