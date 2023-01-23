@@ -371,12 +371,22 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 1000px) {
+  .container {
+    padding-top: 25px;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 
 .header {
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  min-width: 420px;
+  max-width: 420px;
+  width: 100%;
   margin-bottom: 50px;
 }
 .header .slogan {
@@ -426,6 +436,18 @@ body {
   top: 0;
   left: 50%;
 }
+@media screen and (max-width: 1000px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+  }
+  .main::after {
+    opacity: 0;
+  }
+}
 
 .photo {
   padding: 65px 85px 65px 0;
@@ -460,6 +482,11 @@ body {
 .photo__img {
   position: relative;
   z-index: 1;
+}
+@media screen and (max-width: 1000px) {
+  .photo {
+    padding: 0;
+  }
 }
 
 .desc {
@@ -535,4 +562,9 @@ body {
   font-weight: 700;
   border: 1px solid #FFCC00;
   padding: 5px 10px;
+}
+@media screen and (max-width: 1000px) {
+  .desc {
+    padding: 0;
+  }
 }
