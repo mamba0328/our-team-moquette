@@ -1,0 +1,71 @@
+@import 'normalize';
+@import 'vars';
+@import 'fonts';
+@import 'mixins';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    color: $font-color;
+    font-size: $font-size;
+}
+
+.container {
+    @include flex(column, space-between, center);
+    max-width: $container-width;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    min-width: 420px;
+    margin-bottom: 50px;
+
+    .slogan {
+        color: $sub-color;
+        font-weight: 400;
+        font-size: 1.28rem;
+        letter-spacing: 1px;
+        line-height: 1.33;
+        margin-bottom: 15px;
+    }
+
+    .title {
+        font-family: 'Roboto';
+        color: $l-gold;
+        font-size: 4.33rem;
+        margin: 0 0 50px 0;
+    }
+
+    &::before {
+        content: '';
+        width: 440px;
+        height: 2px;
+        background-color: $l-gold;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &::after {
+        content: url(../assets/imgs/icons/bonfire-sharp\ 1.jpg);
+        background-color: white;
+        width: 30px;
+        position: absolute;
+        bottom: -12px;
+        left: 200px;
+    }
+}
