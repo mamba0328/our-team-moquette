@@ -352,14 +352,14 @@ ul {
 
 html,
 body {
-  min-height: 100vh;
-  font-family: "Raleway", sans-serif;
-  color: #333333;
-  font-size: 14px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  color: #333333;
+  font-size: 14px;
 }
 
 .container {

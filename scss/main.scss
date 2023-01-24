@@ -11,11 +11,11 @@
 
 html,
 body {
+    @include flex(row, center, center);
     min-height: 100vh;
     font-family: 'Raleway', sans-serif;
     color: $font-color;
     font-size: $font-size;
-    @include flex(row, center, center);
 }
 
 .container {
